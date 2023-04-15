@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="392.0" prefWidth="587.0" style="-fx-background-color: white; -fx-background-radius: 32px; -fx-border-radius: 32px;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.authentification.QuizController">
+   <children>
+      <Label fx:id="question" layoutX="43.0" layoutY="56.0" prefHeight="89.0" prefWidth="461.0" text="1. How many consonants are there in the English Alphabets?" wrapText="true">
+         <font>
+            <Font name="Open Sans Semibold" size="19.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="option1" layoutX="78.0" layoutY="165.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="181.0" text="RadioButton" />
+      <RadioButton fx:id="option2" layoutX="78.0" layoutY="234.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="181.0" text="RadioButton" />
+      <RadioButton fx:id="option3" layoutX="313.0" layoutY="165.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="181.0" text="RadioButton" />
+      <RadioButton fx:id="option4" layoutX="313.0" layoutY="234.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="181.0" text="RadioButton" />
+   </children>
+</AnchorPane>

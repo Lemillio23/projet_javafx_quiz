@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.HBox?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.authentification.AdminController">
+    <VBox layoutX="25.0" layoutY="25.0" prefHeight="550.0" prefWidth="750.0" spacing="10.0">
+        <Label text="Admin Management" />
+        <TableView fx:id="adminTable" prefHeight="400.0" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="adminIdColumn" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="adminNameColumn" prefWidth="200.0" text="Name" />
+                <TableColumn fx:id="adminEmailColumn" prefWidth="200.0" text="Email" />
+                <TableColumn fx:id="adminPasswordColumn" prefWidth="200.0" text="Password" />
+            </columns>
+        </TableView>
+        <HBox spacing="10.0">
+            <Label text="Name:" />
+            <TextField fx:id="adminNameField" />
+        </HBox>
+        <HBox spacing="10.0">
+            <Label text="Email:" />
+            <TextField fx:id="adminEmailField" />
+        </HBox>
+        <HBox spacing="10.0">
+            <Label text="Password:" />
+            <TextField fx:id="adminPasswordField" />
+        </HBox>
+        <HBox spacing="10.0">
+            <Button fx:id="addAdminButton" onAction="#handleAddAdminButton" text="Add" />
+            <Button fx:id="updateAdminButton" onAction="#handleUpdateAdminButton" text="Update" />
+            <Button fx:id="deleteAdminButton" onAction="#handleDeleteAdminButton" text="Delete" />
+        </HBox>
+    </VBox>
+</AnchorPane>
